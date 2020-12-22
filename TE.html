@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>
+		T.E Time table
+	</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<style>
+	.outermain
+	{
+		border-bottom: 1px solid;
+	}
+	.logo > img
+	{
+		width: 55%;
+		margin-top: 20px;
+	}
+	.menu > ul
+	{
+		list-style-type: none;
+		text-align: right;
+		font-size: 20px;
+	}
+	.menu a
+	{
+		color: #ce0767;
+		text-decoration: none;
+	}
+	.menu li
+	{
+		display: inline-block;
+		padding: 25px 25px;
+	}
+	.menu li a:before
+	{
+		content: '';
+		width: 20px;
+		position: absolute;
+		border-bottom: 3px solid #ce0767;
+		bottom: -11px;
+		right: -875px;
+		transition: ease 0.7s all;
+		overflow: hidden;
+	}
+	.menu li a:hover:before
+	{
+		right: 0;
+	}
+/*	.menu li:hover
+	{
+		background-color: #ce0767;
+		cursor: pointer;
+	}
+	.menu li:hover a
+	{
+		color: white;
+	}*/
+	.table th
+	{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+</style>
+</head>
+<body>
+	<div class="col-xs-12 outerMain">
+		<div class="logo col-md-3 col-xs-3">
+			<img src="images/logo1.png">
+		</div>
+		<div class="menu col-md-9 col-xs-9">
+			<ul>
+				<li><a href="index.php" target="_parent">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- <button class="btn btn-warning registerNow">Register</button> -->
+			</ul>	
+		</div>
+	</div> 
+	<center class="outertable">
+		<table border="1px" cellpadding="50px" class="table">
+			<tr>
+				<th>Day/Time</th>
+				<th>9:00 - 10:00</th>
+				<th>10:00 - 11:00</th>
+				<th>11:00 - 12:00</th>
+				<th>12:00 - 1:00</th>
+				<th>1:00 - 2:00</th>
+				<th>2:00 - 3:00</th>
+				<th>3:00 - 4:00</th>
+				<th>4:00 - 5:00</th>
+
+			</tr>
+			<tr>
+				<th>Mon</th>
+				<th colspan="2">CNS(P) DB C</th>
+				<th colspan="2">INP(L) AS</th>
+				<th colspan="1">Break</th>
+				<th colspan="2">ADMT(L) AG</th>
+			</tr>
+			<tr>
+				<th>Tue</th>
+				<th colspan="2">CNS(L) SVG</th>
+				<th colspan="2">INP(L) AS</th>
+				<th colspan="1">Break</th>
+				<th colspan="1">BCE(L)AVS</th>
+				<th colspan="2">IOT(P) EA C PL</th>
+			</tr>
+			<tr>
+				<th>Wed</th>
+				<th colspan="2">MEP(L)FA</th>
+				<th colspan="2">INP(P)AS</th>
+				<th colspan="1">Break</th>
+				<th colspan="2">CNS(L)VB</th>
+				<th colspan="1">MM</th>
+			</tr>				
+			<tr>
+				<th>Thu</th>
+				<th colspan="2">OLAP(P)VB C PL</th>
+				<th colspan="2">MEP(P) FA</th>
+				<th colspan="1">Break</th>
+				<th colspan="1">BCE(L) AVS</th>
+				<th colspan="2">ECEB(L) AS</th>
+			</tr>
+			<tr>
+				<th>Fri</th>
+				<th colspan="2" style="text-align: center;">ECEB(L) KK</th>
+				<th colspan="1">BCE(L) AVS</th>
+				<th colspan="1">ADMT(L) FA</th>
+				<th colspan="1">Break</th>
+				<th colspan="2">BCE(P) AVS</th>
+				<th colspan="1">FOSS A B C</th>
+			</tr>
+		</tr>
+
+	</table>
+</body>
+</html>
